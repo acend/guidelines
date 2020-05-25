@@ -1,12 +1,15 @@
 {
   "default": true,
-  "MD013": false,
   "MD003": {
     "style": "atx"
   },
   "MD004": {
-    "style": "dash"
+    "style": "asterisk"
   },
+  "MD012": {
+    "maximum": 2
+  },
+  "MD013": false,
   "MD022": {
     "lines_above": 2
   },
