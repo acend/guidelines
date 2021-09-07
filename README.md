@@ -46,3 +46,22 @@ Notes and warnings are highlighted in a particular way using `alert` shortcodes.
 ### Specific terms
 
 * "Web console" for everything that refers to a web user interface ("web GUI"/"WebGUI"/"Web UI"/...)
+
+
+## PDF handouts
+
+After generating a PDF export of a presentation, edit its metadata with ExifTool:
+
+```bash
+title="<training name>"
+subject="${title} Training Presentation"
+exiftool -Title="${title}" -Author="acend gmbh" -Subject="${subject}" -Keywords="${subject}" <PDF filename>
+```
+
+An example using the Container Basics handout:
+
+```bash
+title="Container Basics"
+subject="${title} Training Presentation"
+exiftool -Title="${title}" -Author="acend gmbh" -Subject="${subject}" -Keywords="${subject}" Container\ Basics.pdf
+```
