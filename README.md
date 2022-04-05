@@ -39,8 +39,15 @@ Example: `## Task {{< param sectionnumber >}}.1: Install Kustomize`
 
 Notes and warnings are highlighted in a particular way using `alert` shortcodes.
 
-* Notes: `{{% alert title="Note" color="primary" %}}`
-* Warning: `{{% alert title="Warning" color="secondary" %}}`
+* Notes: `{{% alert title="Note" color="info" %}}`
+* Warning: `{{% alert title="Warning" color="warning" %}}`
+* Danger: `{{% alert title="Danger" color="danger" %}}`
+
+The color codes can be defined via respective docsy theme:
+
+* acend: https://github.com/acend/docsy-acend/blob/main/assets/scss/_variables_project.scss
+* APPUiO: https://github.com/appuio/docsy-appuio/blob/main/assets/scss/_variables_project.scss
+* Puzzle: https://github.com/puzzle/docsy-puzzle/blob/master/assets/scss/_variables_project.scss
 
 
 ### Specific terms
